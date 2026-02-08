@@ -631,6 +631,22 @@
             transform: scale(1.05) rotate(5deg);
         }
 
+        .profile-name {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00ffaa;
+            font-family: 'JetBrains Mono', monospace;
+            text-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+            letter-spacing: 1px;
+        }
+
+        body.dark-theme .profile-name {
+            color: #667eea;
+            text-shadow: 0 0 15px rgba(102, 126, 234, 0.5);
+        }
+
         /* Glitch effect for hero title */
         @keyframes glitch {
             0% { transform: translate(0); }
@@ -1442,8 +1458,11 @@
     <section id="about" class="section-light fade-in">
         <h2>About Me</h2>
         <div class="about-content">
-            <div class="profile-image">
-                <img src="Alokphoto.jpeg" alt="Alok Kumar Singh">
+            <div>
+                <div class="profile-image">
+                    <img src="Alokphoto.jpeg" alt="Alok Kumar Singh">
+                </div>
+                <h3 class="profile-name">Alok Kumar Singh</h3>
             </div>
             <div class="about-text">
                 <p>I’m Alok Kumar Singh, a Computer Science undergraduate passionate about building meaningful digital experiences.</p>
@@ -1452,7 +1471,6 @@
             </div>
         </div>
         <div class="about-logo">
-            <img src="alok-logo.png" alt="Alok Kumar Logo">
         </div>
     </section>
 
